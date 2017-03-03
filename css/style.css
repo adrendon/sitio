@@ -155,7 +155,7 @@ a, button {
         height: 443px;
         position: absolute;
         right: 0;
-        top: 30%;
+        top: 45%;
         width: 1277px;
     }
     .depth-20 {
@@ -163,15 +163,15 @@ a, button {
         height: 861px;
         left: -4%;
         position: absolute;
-        top: 14%;
+        top: 25%;
         width: 1811px;
     }
     .depth-30 {
         background-size: 1237px 402px;
         height: 402px;
         position: absolute;
-        right: 0;
-        top: 48%;
+        right: -18%;
+        bottom: 5%;
         width: 1237px;
     }
     .depth-40 {
@@ -179,19 +179,20 @@ a, button {
         height: 318px;
         left: 20%;
         position: absolute;
-        top: -3%;
+        top: 5%;
         width: 144px;
     }
     .depth-50 {
         background-size: cover;
-        bottom: 0;
+        bottom: -2%;
+        left: -10%;
         height: 800px;
         position: absolute;
-        width: 1667px;
+        width: 1920px;
     }
     .depth-60 {
         background-size: 388px 337px;
-        bottom: 20%;
+        bottom: 8%;
         height: 337px;
         left: 3%;
         position: absolute;
@@ -199,7 +200,7 @@ a, button {
     }
     .depth-70 {
         background-size: 991px 686px;
-        bottom: -5%;
+        bottom: -7%;
         height: 686px;
         position: absolute;
         right: 0;
