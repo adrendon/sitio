@@ -11,28 +11,69 @@
 </head>
 <body>
     <div id="fullpage">
-        <div class="section">
-
+        <div class="section" id="intro">
+            <ul id="scene" class="scene"
+                data-friction-x="0.1"
+                data-friction-y="0.1"
+                data-scalar-x="10"
+                data-scalar-y="1">
+                <li class="layer" data-depth="0.00"><div class="background"></div></li>
+                <li class="layer" data-depth="0.10"><div class="clouds"></div></li>
+                <li class="layer" data-depth="0.20"><div class="birds"></div></li>
+                <li class="layer" data-depth="0.30"><div class="paragliding"></div></li>
+            </ul>
         </div>
         <div class="section">
-            <div class="slide">
+            <div class="slide" id="slide01">
                 <ul id="scene" class="scene"
                     data-friction-x="0.1"
                     data-friction-y="0.1"
                     data-scalar-x="10"
                     data-scalar-y="1">
-                    <li class="layer" data-depth="0.00"><div class="background depth-00"></div></li>
-                    <li class="layer" data-depth="0.10"><div class="mountain-1 depth-10"></div></li>
-                    <li class="layer" data-depth="0.20"><div class="mountain-2 depth-20"></div></li>
-                    <li class="layer" data-depth="0.30"><div class="mountain-3 depth-30"></div></li>
-                    <li class="layer" data-depth="0.50"><div class="paragliding-1 depth-40"></div></li>
-                    <li class="layer" data-depth="0.50"><div class="grass depth-50"></div></li>
-                    <li class="layer" data-depth="0.60"><div class="paragliding-2 depth-60"></div></li>
-                    <li class="layer" data-depth="0.70"><div class="paragliding-3 depth-70"></div></li>
+                    <li class="layer" data-depth="0.00"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.10"><div class="mountain-1"></div></li>
+                    <li class="layer" data-depth="0.20"><div class="mountain-2"></div></li>
+                    <li class="layer" data-depth="0.30"><div class="mountain-3"></div></li>
+                    <li class="layer" data-depth="0.50"><div class="paragliding-1"></div></li>
+                    <li class="layer" data-depth="0.50"><div class="grass"></div></li>
+                    <li class="layer" data-depth="0.60"><div class="paragliding-2"></div></li>
+                    <li class="layer" data-depth="0.70"><div class="paragliding-3"></div></li>
+                    <li class="layer" data-depth="0.80"><div class="paragliding-3"></div></li>
                 </ul>
             </div>
-            <!-- <div class="slide"><h1>Slide 1.2</h1></div> -->
-            <!-- <div class="slide"><h1>Slide 1.3</h1></div> -->
+            <div class="slide" id="slide02">
+                <ul id="scene" class="scene"
+                    data-friction-x="0.1"
+                    data-friction-y="0.1"
+                    data-scalar-x="10"
+                    data-scalar-y="1">
+                    <li class="layer" data-depth="0.00"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.10"><div class="mountain"></div></li>
+                    <li class="layer" data-depth="0.20"><div class="trees"></div></li>
+                    <li class="layer" data-depth="0.30"><div class="house"></div></li>
+                    <li class="layer" data-depth="0.40"><div class="grass-1"></div></li>
+                    <li class="layer" data-depth="0.50"><div class="grass-2"></div></li>
+                    <li class="layer" data-depth="0.60"><div class="shrubberys"></div></li>
+                    <li class="layer" data-depth="0.70"><div class="boy"></div></li>
+                    <li class="layer" data-depth="0.80"><div class="couple"></div></li>
+                </ul>
+            </div>
+            <div class="slide" id="slide03">
+                <ul id="scene" class="scene"
+                    data-friction-x="0.1"
+                    data-friction-y="0.1"
+                    data-scalar-x="10"
+                    data-scalar-y="1">
+                    <li class="layer" data-depth="0.00"><div class="background"></div></li>
+                    <li class="layer" data-depth="0.10"><div class="mountain-1"></div></li>
+                    <li class="layer" data-depth="0.20"><div class="mountain-2"></div></li>
+                    <li class="layer" data-depth="0.30"><div class="mountain-3"></div></li>
+                    <li class="layer" data-depth="0.50"><div class="paragliding-1"></div></li>
+                    <li class="layer" data-depth="0.50"><div class="grass"></div></li>
+                    <li class="layer" data-depth="0.60"><div class="paragliding-2"></div></li>
+                    <li class="layer" data-depth="0.70"><div class="paragliding-3"></div></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -40,7 +81,7 @@
     <script type="text/javascript" src="js/vendor/jquery.parallax.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.easings.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.fullpage.min.js"></script>
-    <script type="text/javascript" src="js/vendor/fullpage.scrollHorizontally.min.js"></script>
+    <!-- <script type="text/javascript" src="js/vendor/fullpage.scrollHorizontally.min.js"></script> -->
     <!-- <script type="text/javascript" src="js/vendor/jquery.fullpage.extensions.min.js"></script> -->
     <script type="text/javascript" src="js/main.js"></script>
 
