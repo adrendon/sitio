@@ -16,7 +16,7 @@ $(document).ready(function() {
         loopHorizontal: false,
         slidesNavigation: false,
         scrollHorizontally: true,
-        scrollHorizontallyKey: '99AB3EFA-FE054004-A82D0796-7AB49719',
+        // scrollHorizontallyKey: '99AB3EFA-FE054004-A82D0796-7AB49719',
         dragAndMove: true,
         scrollOverflowOptions: null,
         touchSensitivity: 15,
