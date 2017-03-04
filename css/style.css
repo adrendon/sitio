@@ -457,27 +457,26 @@ a, button {
     }
 
     #slide02 .shrubberys {
-        background-size: 991px 686px;
-        bottom: -7%;
-        height: 686px;
+        background-size: 560px 231px;
+        bottom: 28%;
+        height: 231px;
+        width: 560px;
         right: 0;
-        width: 991px;
     }
 
     #slide02 .boy {
-        background-size: 991px 686px;
-        bottom: -7%;
-        height: 686px;
-        right: 0;
-        width: 991px;
+        background-size: 405px 332px;
+        bottom: 0;
+        height: 332px;
+        width: 405px;
     }
 
     #slide02 .couple {
-        background-size: 991px 686px;
-        bottom: -7%;
-        height: 686px;
+        background-size: 337px 588px;
+        bottom: 0;
+        height: 588px;
         right: 0;
-        width: 991px;
+        width: 337px;
     }
 
 }
