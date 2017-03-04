@@ -15,7 +15,8 @@ $(document).ready(function() {
         loopHorizontal: false,
         slidesNavigation: false,
         scrollHorizontally: true,
-        scrollHorizontallyKey: 'YWx2YXJvdHJpZ28uY29tX00zVVkyOXVkR2x1ZFc5MWMwaHZjbWw2YjI1MFlXdz12Nk0',
+        // scrollHorizontallyKey: 'YWx2YXJvdHJpZ28uY29tX00zVVkyOXVkR2x1ZFc5MWMwaHZjbWw2YjI1MFlXdz12Nk0',
+        scrollHorizontallyKey: 'YWRyZW5kb24uZ2l0aHViLmlvX0FBN2MyTnliMnhzU0c5eWFYcHZiblJoYkd4NXY0ag==', //licencia comprada
         scrollOverflowOptions: null,
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
