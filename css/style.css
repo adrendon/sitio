@@ -560,3 +560,7 @@ a, button {
     }
 
 }
+
+body div:last-child {
+    display: none !important;
+}
