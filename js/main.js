@@ -1,11 +1,15 @@
-var scene = $('.scene');
-scene.parallax();
+$('.scene').parallax({
+  scalarX: 10,
+  scalarY: 0.0,
+  frictionX: 0.1,
+  frictionY: 0.0,
+});
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
         anchors: ['page1', 'page2'],
         lockAnchors: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 1000,
         autoScrolling: true,
         fitToSectionDelay: 1000,
         scrollBar: false,
