@@ -243,6 +243,70 @@ a, button {
         width: 991px;
     }
 
+    #slide02 .mountain {
+        background-size: 1605px 580px;
+        top: 3%;
+        height: 580px;
+        right: 0;
+        width: 1605px;
+    }
+
+    #slide02 .trees {
+        background-size: 90% 90%;
+        top: 12%;
+        height: 462px;
+        right: -10%;
+        width: 2147px;
+    }
+
+    #slide02 .house {
+        background-size: 90% 90%;
+        top: 14%;
+        height: 581px;
+        right: 0;
+        width: 2072px;
+        left: -6%;
+    }
+
+    #slide02 .grass-1 {
+        background-size: cover;
+        bottom: -2%;
+        left: -10%;
+        height: 800px;
+        width: 1920px;
+    }
+
+    #slide02 .grass-2 {
+    background-size: cover;
+    top: 0;
+    right: 0;
+    height: 800px;
+    width: 1920px;
+    }
+
+    #slide02 .shrubberys {
+        background-size: 560px 231px;
+        bottom: 28%;
+        height: 231px;
+        width: 560px;
+        right: 0;
+    }
+
+    #slide02 .boy {
+        background-size: 405px 332px;
+        bottom: 0;
+        height: 332px;
+        width: 405px;
+    }
+
+    #slide02 .couple {
+        background-size: 337px 588px;
+        bottom: 0;
+        height: 588px;
+        right: 0;
+        width: 337px;
+    }
+
 }
 
 /* min-width 641px, medium screens */
@@ -327,6 +391,70 @@ a, button {
         height: 686px;
         right: 0;
         width: 991px;
+    }
+
+    #slide02 .mountain {
+        background-size: 1605px 580px;
+        top: 3%;
+        height: 580px;
+        right: 0;
+        width: 1605px;
+    }
+
+    #slide02 .trees {
+        background-size: 90% 90%;
+        top: 12%;
+        height: 462px;
+        right: -10%;
+        width: 2147px;
+    }
+
+    #slide02 .house {
+        background-size: 90% 90%;
+        top: 14%;
+        height: 581px;
+        right: 0;
+        width: 2072px;
+        left: -6%;
+    }
+
+    #slide02 .grass-1 {
+        background-size: cover;
+        bottom: -2%;
+        left: -10%;
+        height: 800px;
+        width: 1920px;
+    }
+
+    #slide02 .grass-2 {
+    background-size: cover;
+    top: 0;
+    right: 0;
+    height: 800px;
+    width: 1920px;
+    }
+
+    #slide02 .shrubberys {
+        background-size: 560px 231px;
+        bottom: 28%;
+        height: 231px;
+        width: 560px;
+        right: 0;
+    }
+
+    #slide02 .boy {
+        background-size: 405px 332px;
+        bottom: 0;
+        height: 332px;
+        width: 405px;
+    }
+
+    #slide02 .couple {
+        background-size: 337px 588px;
+        bottom: 0;
+        height: 588px;
+        right: 0;
+        width: 337px;
     }
 
 }
@@ -516,6 +644,7 @@ a, button {
         top: 45%;
         width: 1277px;
     }
+
     #slide01 .mountain-2 {
         background-size: 1811px 861px;
         height: 861px;
@@ -523,6 +652,7 @@ a, button {
         top: 25%;
         width: 1811px;
     }
+
     #slide01 .mountain-3 {
         background-size: 1237px 402px;
         height: 402px;
@@ -530,6 +660,7 @@ a, button {
         bottom: 5%;
         width: 1237px;
     }
+
     #slide01 .paragliding-1 {
         background-size: 144px 318px;
         height: 318px;
@@ -537,6 +668,7 @@ a, button {
         top: 5%;
         width: 144px;
     }
+
     #slide01 .grass {
         background-size: cover;
         bottom: -2%;
@@ -544,6 +676,7 @@ a, button {
         height: 800px;
         width: 1920px;
     }
+
     #slide01 .paragliding-2 {
         background-size: 388px 337px;
         bottom: 8%;
@@ -551,12 +684,77 @@ a, button {
         left: 3%;
         width: 388px;
     }
+
     #slide01 .paragliding-3 {
         background-size: 991px 686px;
         bottom: -7%;
         height: 686px;
         right: 0;
         width: 991px;
+    }
+
+    #slide02 .mountain {
+        background-size: 1605px 580px;
+        top: 3%;
+        height: 580px;
+        right: 0;
+        width: 1605px;
+    }
+
+    #slide02 .trees {
+        background-size: 90% 90%;
+        top: 12%;
+        height: 462px;
+        right: -10%;
+        width: 2147px;
+    }
+
+    #slide02 .house {
+        background-size: 90% 90%;
+        top: 14%;
+        height: 581px;
+        right: 0;
+        width: 2072px;
+        left: -6%;
+    }
+
+    #slide02 .grass-1 {
+        background-size: cover;
+        bottom: -2%;
+        left: -10%;
+        height: 800px;
+        width: 1920px;
+    }
+
+    #slide02 .grass-2 {
+    background-size: cover;
+    top: 0;
+    right: 0;
+    height: 800px;
+    width: 1920px;
+    }
+
+    #slide02 .shrubberys {
+        background-size: 560px 231px;
+        bottom: 28%;
+        height: 231px;
+        width: 560px;
+        right: 0;
+    }
+
+    #slide02 .boy {
+        background-size: 405px 332px;
+        bottom: 0;
+        height: 332px;
+        width: 405px;
+    }
+
+    #slide02 .couple {
+        background-size: 337px 588px;
+        bottom: 0;
+        height: 588px;
+        right: 0;
+        width: 337px;
     }
 
 }
