@@ -14,7 +14,7 @@ $(document).ready(function() {
         loopTop: false,
         loopHorizontal: false,
         slidesNavigation: false,
-        scrollHorizontally: false,
+        // scrollHorizontally: true,
         // scrollHorizontallyKey: '99AB3EFA-FE054004-A82D0796-7AB49719',
         scrollOverflowOptions: null,
         touchSensitivity: 15,
@@ -34,5 +34,19 @@ $(document).on('mouseover', '.fp-next', function(){
   $.fn.fullpage.moveSlideRight();
 });
 
-alert($(window).height() + ' de alto');
-alert($(window).width() + ' de ancho');
+console.log($(window).height() + ' de alto');
+console.log($(window).width() + ' de ancho');
+
+// $(document).ready(function(){
+//     cargar_pantalla('inicio.html');
+// });
+
+// function cargar_pantalla(url){
+//    $.ajax({
+//         url: url,
+//         dataType: "html",
+//         success: function(data){
+//             $('.box').html(data);
+//         };
+//    });
+// }
