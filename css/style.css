@@ -482,6 +482,26 @@ p strong {
         left: 15%;
     }
 
+    #intro .text {
+        left: 25%;
+        top: 20%;
+    }
+
+    .section-two #slide01 .text {
+        right: 16%;
+        top: 2%;
+    }
+
+    .section-two #slide02 .text {
+        left: 22%;
+        top: 8%;
+    }
+
+    .section-two #slide03 .text {
+        left: 32%;
+        bottom: 4%;
+    }
+
 }
 
 /* min-width 642px, medium screens */
@@ -583,6 +603,26 @@ p strong {
 
     #slide03 .woman {
         background-size: 50% 50%, auto;
+    }
+
+    #intro .text {
+        left: 25%;
+        top: 20%;
+    }
+
+    .section-two #slide01 .text {
+        right: 16%;
+        top: 2%;
+    }
+
+    .section-two #slide02 .text {
+        left: 22%;
+        top: 8%;
+    }
+
+    .section-two #slide03 .text {
+        left: 32%;
+        bottom: 4%;
     }
 
 }
@@ -775,10 +815,13 @@ p strong {
 
     #slide02 .house {
         background-size: 100% 100%, auto;
+        width: 110%;
     }
 
     #slide02 .grass {
         background-size: 100% 100%, auto;
+        right: -5%;
+        width: 110%;
     }
 
     #slide02 .boy {
@@ -796,18 +839,24 @@ p strong {
     #slide03 .skyscraper {
         background-size: 100% 100%, auto;
         right: 15%;
+        top: 25%;
     }
 
     #slide03 .house {
         background-size: 100% 100%, auto;
+        left: -5%;
+        width: 100%;
     }
 
     #slide03 .grass {
         background-size: 100% 100%, auto;
+        right: -5%;
+        width: 110%;
     }
 
     #slide03 .man {
         background-size: 100% 100%, auto;
+        right: 15%;
     }
 
     #slide03 .woman {
@@ -820,9 +869,19 @@ p strong {
     }
 
     .section-two #slide01 .text {
-        right: 25%;
-        top: 13%;
-    }
+    right: 24%;
+    top: 15%;
+}
+
+    .section-two #slide02 .text {
+    left: 18%;
+    top: 20%;
+}
+
+    .section-two #slide03 .text {
+    left: 36%;
+    bottom: 6%;
+}
 
 }
 
@@ -872,6 +931,14 @@ p strong {
     #slide03 .man {}
 
     #slide03 .woman {}
+
+    #intro .text {}
+
+    .section-two #slide01 .text {}
+
+    .section-two #slide02 .text {}
+
+    .section-two #slide03 .text {}
 
 }
 
