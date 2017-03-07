@@ -19,7 +19,7 @@ $(document).ready(function() {
         loopHorizontal: false,
         slidesNavigation: false,
         scrollHorizontally: true,
-        scrollHorizontallyKey: 'YWRyZW5kb24uZ2l0aHViLmlvX0FBN2MyTnliMnhzU0c5eWFYcHZiblJoYkd4NXY0ag==',
+        // scrollHorizontallyKey: 'YWRyZW5kb24uZ2l0aHViLmlvX0FBN2MyTnliMnhzU0c5eWFYcHZiblJoYkd4NXY0ag==',
         scrollOverflowOptions: null,
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
@@ -37,20 +37,3 @@ $(document).on('mouseover', '.fp-prev', function(){
 $(document).on('mouseover', '.fp-next', function(){
   $.fn.fullpage.moveSlideRight();
 });
-
-console.log($(window).height() + ' de alto');
-console.log($(window).width() + ' de ancho');
-
-// $(document).ready(function(){
-//     cargar_pantalla('inicio.html');
-// });
-
-// function cargar_pantalla(url){
-//    $.ajax({
-//         url: url,
-//         dataType: "html",
-//         success: function(data){
-//             $('.box').html(data);
-//         };
-//    });
-// }
