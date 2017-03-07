@@ -1,15 +1,114 @@
 button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} menu,article,aside,details,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
 
-a, button {
-  transition: color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
-  background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
-  opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+@font-face {
+    font-family: 'Renault Life';
+    src: url('../fonts/RenaultLife-Bold.eot');
+    src: url('../fonts/RenaultLife-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RenaultLife-Bold.woff2') format('woff2'),
+        url('../fonts/RenaultLife-Bold.woff') format('woff'),
+        url('../fonts/RenaultLife-Bold.ttf') format('truetype'),
+        url('../fonts/RenaultLife-Bold.svg#RenaultLife-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 
-// #fullpage {
-//     margin: auto;
-//     max-width: 1500px;
-// }
+@font-face {
+    font-family: 'Renault Life';
+    src: url('../fonts/RenaultLife-Light.eot');
+    src: url('../fonts/RenaultLife-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RenaultLife-Light.woff2') format('woff2'),
+        url('../fonts/RenaultLife-Light.woff') format('woff'),
+        url('../fonts/RenaultLife-Light.ttf') format('truetype'),
+        url('../fonts/RenaultLife-Light.svg#RenaultLife-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Renault Life';
+    src: url('../fonts/RenaultLife.eot');
+    src: url('../fonts/RenaultLife.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RenaultLife.woff2') format('woff2'),
+        url('../fonts/RenaultLife.woff') format('woff'),
+        url('../fonts/RenaultLife.ttf') format('truetype'),
+        url('../fonts/RenaultLife.svg#RenaultLife') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Renault Life';
+    font-size: 45px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+p small {
+    font-family: 'Renault Life';
+    font-size: 43px;
+    font-weight: 300;
+}
+
+p strong {
+    font-family: 'Renault Life';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text {
+    list-style: none;
+    position: absolute;
+}
+
+.p73 {
+    font-size: 73px;
+}
+
+#intro .text {
+    left: 25%;
+    top: 50%;
+}
+
+.section-two .text {
+    bottom: 0;
+    height: 86px;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 0;
+    width: 320px;
+}
+
+.section-two p {
+    font-size:41px;
+}
+
+.section-two .blockYellow {
+    background: #ffde00;
+    display: block;
+    font-size:17px;
+    padding: 10px 20px;
+}
+
+#intro ul .text .is-animated,
+.section-two #slide01 ul .text .is-animated,
+.section-two #slide02 ul .text .is-animated,
+.section-two #slide03 ul .text .is-animated {
+    opacity: 0;
+    transform: translateX(-1000px);
+    transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+                opacity .66s ease-in-out;
+}
+
+#intro.active ul .text .is-animated,
+.section-two #slide01.active ul .text .is-animated,
+.section-two #slide02.active ul .text .is-animated,
+.section-two #slide03.active ul .text .is-animated{
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 1.8s;
+}
 
 .scene,
 .layer {
@@ -38,8 +137,7 @@ a, button {
 #intro .background {
     background: url(../img/section_01/bg.png) no-repeat 100% 100%;
     background-size: cover;
-    bottom: 0px;
-    left: 0%;
+    bottom: 0;
     position: absolute;
     top: 0;
     width: 100%;
@@ -47,24 +145,29 @@ a, button {
 
 #intro .clouds {
     background: url(../img/section_01/depth-01.png) no-repeat;
+    height: 1080px;
     position: absolute;
+    width: 1920px;
 }
 
 #intro .birds {
     background: url(../img/section_01/depth-02.png) no-repeat;
+    height: 110px;
     position: absolute;
+    width: 169px;
 }
 
 #intro .paragliding {
     background: url(../img/section_01/depth-03.png) no-repeat;
+    height: 386px;
     position: absolute;
+    width: 408px;
 }
 
 #slide01 .background {
     background: url(../img/section_02/bg.png) no-repeat 100% 100%;
     background-size: cover;
-    bottom: 0px;
-    left: 0%;
+    bottom: 0;
     position: absolute;
     top: 0;
     width: 100%;
@@ -72,685 +175,656 @@ a, button {
 
 #slide01 .mountain-1 {
     background: url(../img/section_02/depth-01.png) no-repeat;
+    height: 1080px;
     position: absolute;
+    width: 1920px;
 }
 
 #slide01 .mountain-2 {
     background: url(../img/section_02/depth-02.png) no-repeat;
+    height: 1080px;
     position: absolute;
+    width: 1920px;
 }
 
 #slide01 .mountain-3 {
-    background: url(../img/section_02/depth-03-1.png) no-repeat;
+    background: url(../img/section_02/depth-04.png) no-repeat;
+    height: 1080px;
     position: absolute;
+    width: 1920px;
 }
 
 #slide01 .paragliding-1 {
-    background: url(../img/section_02/depth-03-2.png) no-repeat;
+    background: url(../img/section_02/depth-03.png) no-repeat;
+    height: 366px;
     position: absolute;
+    width: 165px;
 }
 
-#slide01 .grass {
-    background: url(../img/section_02/depth-04.png) no-repeat;
-    height: 800px;
+#slide01 .grass-1 {
+    background: url(../img/section_02/depth-05-1.png) no-repeat;
+    height: 1080px;
     position: absolute;
+    width: 1920px;
+}
+
+#slide01 .grass-2 {
+    background: url(../img/section_02/depth-06-1.png) no-repeat;
+    height: 1080px;
+    position: absolute;
+    width: 1920px;
 }
 
 #slide01 .paragliding-2 {
-    background: url(../img/section_02/depth-05.png) no-repeat;
+    background: url(../img/section_02/depth-05-2.png) no-repeat;
+    height: 388px;
     position: absolute;
+    width: 447px;
 }
 
 #slide01 .paragliding-3 {
-    background: url(../img/section_02/depth-06.png) no-repeat;
+    background: url(../img/section_02/depth-06-2.png) no-repeat;
+    height: 742px;
     position: absolute;
+    width: 1142px;
 }
 
 #slide02 .background {
     background: url(../img/section_03/bg.png) no-repeat;
     background-size: cover;
-    bottom: 0px;
-    left: 0%;
+    bottom: 0;
+    left: 0;
     position: absolute;
+    right: 0;
     top: 0;
     width: 100%;
 }
 
 #slide02 .mountain {
     background: url(../img/section_03/depth-01.png) no-repeat;
+    height: 1080px;
     position: absolute;
-}
-
-#slide02 .trees {
-    background: url(../img/section_03/depth-02.png) no-repeat;
-    position: absolute;
+    width: 1920px;
 }
 
 #slide02 .house {
+    background: url(../img/section_03/depth-02.png) no-repeat;
+    height: 1080px;
+    position: absolute;
+    width: 1920px;
+}
+
+#slide02 .grass {
     background: url(../img/section_03/depth-03.png) no-repeat;
+    height: 1080px;
     position: absolute;
-}
-
-#slide02 .grass-1 {
-    background: url(../img/section_03/depth-04-1.png) no-repeat;
-    position: absolute;
-}
-
-#slide02 .grass-2 {
-    background: url(../img/section_03/depth-04-2.png) no-repeat;
-    position: absolute;
-}
-
-#slide02 .shrubberys {
-    background: url(../img/section_03/depth-04-3.png) no-repeat;
-    position: absolute;
+    width: 1920px;
 }
 
 #slide02 .boy {
-    background: url(../img/section_03/depth-05.png) no-repeat;
+    background: url(../img/section_03/depth-04.png) no-repeat;
+    height: 383px;
     position: absolute;
+    width: 467px;
 }
 
 #slide02 .couple {
-    background: url(../img/section_03/depth-06.png) no-repeat;
+    background: url(../img/section_03/depth-05.png) no-repeat;
+    height: 657px;
     position: absolute;
+    width: 388px;
 }
 
 #slide03 .background {
+    background: url(../img/section_04/bg.png) no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
 
+#slide03 .clouds {
+    background: url(../img/section_04/depth-01.png) no-repeat;
+    position: absolute;
+    height: 1080px;
+    width: 1920px;
+}
+#slide03 .skyscraper {
+    background: url(../img/section_04/depth-02.png) no-repeat;
+    height: 483px;
+    position: absolute;
+    width: 811px;
+}
+#slide03 .house {
+    background: url(../img/section_04/depth-03.png) no-repeat;
+    height: 1080px;
+    position: absolute;
+    width: 1920px;
+}
+#slide03 .grass {
+    background: url(../img/section_04/depth-04.png) no-repeat;
+    height: 1080px;
+    position: absolute;
+    width: 1920px;
+}
+#slide03 .man {
+    background: url(../img/section_04/depth-05.png) no-repeat;
+    height: 339px;
+    position: absolute;
+    width: 207px;
+}
+#slide03 .woman {
+    background: url(../img/section_04/depth-06.png) no-repeat;
+    height: 656px;
+    position: absolute;
+    width: 410px;
 }
 
 /* Define mobile styles */
 @media only screen {
 
     #intro .clouds {
-        background-size: 1190px 466px;
-        height: 566px;
-        right: -5%;
-        top: 25%;
-        width: 1190px;
+        background-position: 100% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
+        right: 0;
     }
 
     #intro .birds  {
-        background-size: 147px 96px;
-        bottom: 0;
-        height: 96px;
-        left: 40%;
-        top: 31%;
-        width: 147px;
+        background-position: 100% 100%;
+        background-size: 25% 25%, auto;
+        left: 25%;
+        top: 25%;
     }
 
     #intro .paragliding {
-        background-size: 354px 335px;
-        height: 335px;
-        right: 11%;
-        top: 8%;
-        width: 354px;
+        background-position: 100% 25%;
+        background-size: 30% 30%, auto;
+        right: 4%;
     }
 
     #slide01 .mountain-1 {
-        background-size: 1277px 443px;
-        height: 443px;
+        background-position: 100% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
         right: 0;
-        top: 45%;
-        width: 1277px;
     }
 
     #slide01 .mountain-2 {
-        background-size: 1811px 861px;
-        height: 861px;
-        left: -4%;
-        top: 25%;
-        width: 1811px;
+        background-position: 0 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
     }
 
     #slide01 .mountain-3 {
-        background-size: 1237px 402px;
-        bottom: 5%;
-        height: 402px;
-        right: -18%;
-        width: 1237px;
+        background-position: 100% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
+        right: 0;
     }
 
     #slide01 .paragliding-1 {
-        background-size: 144px 318px;
-        height: 318px;
-        left: 20%;
-        top: 5%;
-        width: 144px;
+        background-position: 70% 10%;
+        background-size: 25% 25%, auto;
     }
 
-    #slide01 .grass {
-        background-position: center center;
-        background-size: 100% 100%, auto;
-        left: -10%;
+    #slide01 .grass-1 {
+        background-position: 0% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
+    }
+
+    #slide01 .grass-2 {
+        background-position: 0% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
     }
 
     #slide01 .paragliding-2 {
-        background-size: 388px 337px;
-        bottom: 8%;
-        height: 337px;
-        left: 3%;
-        width: 388px;
+        background-position: 10% 75%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
     }
 
     #slide01 .paragliding-3 {
-        background-size: 991px 686px;
-        bottom: -7%;
-        height: 686px;
+        background-position: 100% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
         right: 0;
-        width: 991px;
     }
 
     #slide02 .mountain {
-        background-size: 1605px 580px;
-        height: 580px;
-        right: 0;
-        top: 3%;
-        width: 1605px;
-    }
-
-    #slide02 .trees {
-        background-size: 90% 90%;
-        height: 462px;
-        right: -10%;
-        top: 12%;
-        width: 2147px;
+    background-position: 0% 100%;
+    background-size: 25% 25%, auto;
+    bottom: 0;
     }
 
     #slide02 .house {
-        background-size: 90% 90%;
-        height: 581px;
-        left: -6%;
-        right: 0;
-        top: 14%;
-        width: 2072px;
+        background-position: 0% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
     }
 
-    #slide02 .grass-1 {
-        background-size: cover;
-        bottom: -2%;
-        height: 800px;
-        left: -10%;
-        width: 1920px;
-    }
-
-    #slide02 .grass-2 {
-        background-size: cover;
-        height: 800px;
+    #slide02 .grass {
+        background-position: 100% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
         right: 0;
-        top: 0;
-        width: 1920px;
-    }
-
-    #slide02 .shrubberys {
-        background-size: 560px 231px;
-        bottom: 28%;
-        height: 231px;
-        right: 0;
-        width: 560px;
     }
 
     #slide02 .boy {
-        background-size: 405px 332px;
+        background-position: 0% 100%;
+        background-size: 25% 25%, auto;
         bottom: 0;
-        height: 332px;
-        width: 405px;
+        left: 8%;
     }
 
     #slide02 .couple {
-        background-size: 337px 588px;
+        background-position: 100% 100%;
+        background-size: 25% 25%, auto;
         bottom: 0;
-        height: 588px;
+        right: 20%;
+    }
+
+    #slide03 .clouds {
+        background-position: 100% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
         right: 0;
-        width: 337px;
+    }
+
+    #slide03 .skyscraper {
+        background-position: 88% 40%;
+        background-size: 25% 25%, auto;
+        right: 0;
+    }
+
+    #slide03 .house {
+        background-position: 0% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
+    }
+
+    #slide03 .grass {
+        background-position: 0% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
+    }
+
+    #slide03 .man {
+        background-position: 40% 100%;
+        background-size: 25% 25%, auto;
+        bottom: 5%;
+        right: 0;
+    }
+
+    #slide03 .woman {
+        background-position: 0 100%;
+        background-size: 25% 25%, auto;
+        bottom: 0;
+        left: 15%;
     }
 
 }
 
-/* min-width 641px, medium screens */
+/* min-width 642px, medium screens */
 @media only screen and (min-width: 40.063em) {
 
     #intro .clouds {
-        background-size: 1190px 466px;
-        height: 566px;
-        right: -5%;
-        top: 25%;
-        width: 1190px;
+        background-size: 50% 50%, auto;
     }
 
     #intro .birds  {
-        background-size: 147px 96px;
-        bottom: 0;
-        height: 96px;
-        left: 40%;
-        top: 31%;
-        width: 147px;
+        background-position: 100% 100%;
+        background-size: 50% 50%, auto;
+        left: 30%;
+        top: 30%;
     }
 
     #intro .paragliding {
-        background-size: 354px 335px;
-        height: 335px;
-        right: 11%;
-        top: 8%;
-        width: 354px;
+        background-position: 100% 50%;
+        background-size: 50% 50%, auto;
+        right: 8%;
+        top: 5%;
     }
 
     #slide01 .mountain-1 {
-        background-size: 1277px 443px;
-        height: 443px;
-        right: 0;
-        top: 45%;
-        width: 1277px;
+        background-size: 50% 50%, auto;
     }
 
     #slide01 .mountain-2 {
-        background-size: 1811px 861px;
-        height: 861px;
-        left: -4%;
-        top: 25%;
-        width: 1811px;
+        background-size: 50% 50%, auto;
     }
 
     #slide01 .mountain-3 {
-        background-size: 1237px 402px;
-        bottom: 5%;
-        height: 402px;
-        right: -18%;
-        width: 1237px;
+        background-size: 50% 50%, auto;
     }
 
     #slide01 .paragliding-1 {
-        background-size: 144px 318px;
-        height: 318px;
-        left: 20%;
-        top: 5%;
-        width: 144px;
+        background-size: 50% 50%, auto;
+        left: 5%;
+        top: 2%;
     }
 
-    #slide01 .grass {
-        left: -10%;
+    #slide01 .grass-1 {
+        background-size: 50% 50%, auto;
+    }
+
+    #slide01 .grass-2 {
+        background-size: 50% 50%, auto;
     }
 
     #slide01 .paragliding-2 {
-        background-size: 388px 337px;
-        bottom: 8%;
-        height: 337px;
-        left: 3%;
-        width: 388px;
+        background-size: 50% 50%, auto;
+        bottom: 5%;
+        left: 1%;
     }
 
     #slide01 .paragliding-3 {
-        background-size: 991px 686px;
-        bottom: -7%;
-        height: 686px;
-        right: 0;
-        width: 991px;
+        background-size: 50% 50%, auto;
     }
 
     #slide02 .mountain {
-        background-size: 1605px 580px;
-        height: 580px;
-        right: 0;
-        top: 3%;
-        width: 1605px;
-    }
-
-    #slide02 .trees {
-        background-size: 90% 90%;
-        height: 462px;
-        right: -10%;
-        top: 12%;
-        width: 2147px;
+    background-size: 50% 50%, auto;
     }
 
     #slide02 .house {
-        background-size: 90% 90%;
-        height: 581px;
-        left: -6%;
-        right: 0;
-        top: 14%;
-        width: 2072px;
+        background-size: 50% 50%, auto;
     }
 
-    #slide02 .grass-1 {
-        background-size: cover;
-        bottom: -2%;
-        height: 800px;
-        left: -10%;
-        width: 1920px;
-    }
-
-    #slide02 .grass-2 {
-        background-size: cover;
-        height: 800px;
-        right: 0;
-        top: 0;
-        width: 1920px;
-    }
-
-    #slide02 .shrubberys {
-        background-size: 560px 231px;
-        bottom: 28%;
-        height: 231px;
-        right: 0;
-        width: 560px;
+    #slide02 .grass {
+        background-size: 50% 50%, auto;
     }
 
     #slide02 .boy {
-        background-size: 405px 332px;
-        bottom: 0;
-        height: 332px;
-        width: 405px;
+    background-size: 50% 50%, auto;
     }
 
     #slide02 .couple {
-        background-size: 337px 588px;
-        bottom: 0;
-        height: 588px;
-        right: 0;
-        width: 337px;
+        background-size: 50% 50%, auto;
+    }
+
+    #slide03 .clouds {
+        background-size: 50% 50%, auto;
+    }
+
+    #slide03 .skyscraper {
+        background-size: 50% 50%, auto;
+    }
+
+    #slide03 .house {
+        background-size: 50% 50%, auto;
+    }
+
+    #slide03 .grass {
+        background-size: 50% 50%, auto;
+    }
+
+    #slide03 .man {
+        background-size: 50% 50%, auto;
+    }
+
+    #slide03 .woman {
+        background-size: 50% 50%, auto;
     }
 
 }
 
-/* min-width 1025px, large screens */
+/* min-width 1026px, large screens */
 @media only screen and (min-width: 64.063em) {
 
     #intro .clouds {
-        background-size: 1190px 466px;
-        height: 566px;
-        right: 0;
-        top: 5%;
-        width: 1190px;
+        background-size: 75% 75%, auto;
     }
 
     #intro .birds  {
-        background-size: 147px 96px;
-        bottom: 0;
-        height: 96px;
-        left: 40%;
-        top: 50%;
-        width: 147px;
+        background-size: 75% 75%, auto;
+        left: 35%;
+        top: 35%;
     }
 
     #intro .paragliding {
-        background-size: 354px 335px;
-        height: 335px;
-        right: 11%;
-        top: 8%;
-        width: 354px;
+        background-position: 100% 75%;
+        background-size: 75% 75%, auto;
+        right: 12%;
+        top: 10%;
     }
 
     #slide01 .mountain-1 {
-        background-position: center center;
-        background-size: 80% 80%, auto;
-        right: -20%;
-        top: 10%;
-        width: 100%;
+        background-size: 75% 75%, auto;
     }
 
     #slide01 .mountain-2 {
-        background-position: center center;
-        background-size: 80% 80%, auto;
-        left: -15%;
-        right: 0;
-        top: -30%;
-        width: 100%;
+        background-size: 75% 75%, auto;
     }
 
     #slide01 .mountain-3 {
-        background-position: center center;
-        background-size: 80% 80%, auto;
-        right: -20%;
-        top: 20%;
-        width: 100%;
+        background-size: 75% 75%, auto;
     }
 
     #slide01 .paragliding-1 {
-        background-size: 144px 318px;
-        height: 318px;
-        left: 20%;
-        top: 5%;
-        width: 144px;
+        background-size: 75% 75%, auto;
+        left: 10%;
+        top: 4%;
     }
 
-    #slide01 .grass {
-        bottom: 0;
-        left: -5%;
-        right: -5%;
-        width: 110%;
+    #slide01 .grass-1 {
+        background-size: 75% 75%, auto;
+    }
+
+    #slide01 .grass-2 {
+        background-size: 75% 75%, auto;
     }
 
     #slide01 .paragliding-2 {
-        background-size: 388px 337px;
-        bottom: 8%;
-        height: 337px;
-        left: 3%;
-        width: 388px;
+        background-size: 75% 75%, auto;
+        left: 2%;
+        bottom: 15%;
     }
 
     #slide01 .paragliding-3 {
-        background-size: 991px 686px;
-        bottom: -7%;
-        height: 686px;
-        right: 0;
-        width: 991px;
+    background-size: 75% 75%, auto;
     }
 
     #slide02 .mountain {
-        background-size: 1605px 580px;
-        height: 580px;
-        right: 0;
-        top: 3%;
-        width: 1605px;
-    }
-
-    #slide02 .trees {
-        background-size: 90% 90%;
-        height: 462px;
-        right: -10%;
-        top: 12%;
-        width: 2147px;
+    background-size: 75% 75%, auto;
     }
 
     #slide02 .house {
-        background-size: 90% 90%;
-        height: 581px;
-        left: -6%;
-        right: 0;
-        top: 14%;
-        width: 2072px;
+        background-size: 75% 75%, auto;
     }
 
-    #slide02 .grass-1 {
-        background-position: center center;
-        background-size: 100% 100%, auto;
-        bottom: 0;
-        height: 800px;
-        left: -5%;
-        right: -5%;
-        width: 110%;
-    }
-
-    #slide02 .grass-2 {
-        background-size: cover;
-        height: 800px;
-        right: 0;
-        top: 0;
-        width: 1920px;
-    }
-
-    #slide02 .shrubberys {
-        background-size: 560px 231px;
-        bottom: 28%;
-        height: 231px;
-        right: 0;
-        width: 560px;
+    #slide02 .grass {
+        background-size: 75% 75%, auto;
     }
 
     #slide02 .boy {
-        background-size: 405px 332px;
-        bottom: 0;
-        height: 332px;
-        width: 405px;
+        background-size: 75% 75%, auto;
     }
 
     #slide02 .couple {
-        background-size: 337px 588px;
-        bottom: 0;
-        height: 588px;
-        right: 0;
-        width: 337px;
+        background-size: 75% 75%, auto;
+    }
+
+    #slide03 .clouds {
+        background-size: 75% 75%, auto;
+    }
+
+    #slide03 .skyscraper {
+        background-size: 75% 75%, auto;
+        top: 35%;
+        right: 5%;
+    }
+
+    #slide03 .house {
+        background-size: 75% 75%, auto;
+    }
+
+    #slide03 .grass {
+        background-size: 75% 75%, auto;
+    }
+
+    #slide03 .man {
+        background-size: 75% 75%, auto;
+    }
+
+    #slide03 .woman {
+        background-size: 75% 75%, auto;
     }
 
 }
 
-/* min-width 1441px, xlarge screens */
+/* min-width 1442px, xlarge screens */
 @media only screen and (min-width: 90.063em) {
 
     #intro .clouds {
-        background-size: 1190px 466px;
-        height: 566px;
-        right: -5%;
-        top: 25%;
-        width: 1190px;
+        background-size: 100% 100%, auto;
     }
 
     #intro .birds  {
-        background-size: 147px 96px;
-        bottom: 0;
-        height: 96px;
+        background-size: 100% 100%, auto;
         left: 40%;
-        top: 31%;
-        width: 147px;
+        top: 40%;
     }
 
     #intro .paragliding {
-        background-size: 354px 335px;
-        height: 335px;
-        right: 11%;
-        top: 8%;
-        width: 354px;
+        background-position: 100% 100%;
+        background-size: 100% 100%, auto;
+        right: 16%;
+        top: 15%;
     }
 
     #slide01 .mountain-1 {
-        background-size: 1277px 443px;
-        height: 443px;
-        right: 0;
-        top: 40%;
-        width: 1277px;
+        background-size: 100% 100%, auto;
     }
 
     #slide01 .mountain-2 {
-        background-position: center center;
         background-size: 100% 100%, auto;
-        left: -10%;
-        right: 0;
-        top: 10%;
-        width: 100%;
     }
 
     #slide01 .mountain-3 {
-        background-position: center center;
         background-size: 100% 100%, auto;
-        right: -15%;
-        top: 50%;
-        width: 100%;
     }
 
     #slide01 .paragliding-1 {
-        background-size: 144px 318px;
-        height: 318px;
-        left: 20%;
-        top: 5%;
-        width: 144px;
+        background-size: 100% 100%, auto;
+        left: 15%;
+        top: 6%;
     }
 
-    #slide01 .grass {
-        left: -3%;
-        right: -3%;
-        width: 106%;
+    #slide01 .grass-1 {
+        background-size: 100% 100%, auto;
+    }
+
+    #slide01 .grass-2 {
+        background-size: 100% 100%, auto;
     }
 
     #slide01 .paragliding-2 {
-        background-size: 388px 337px;
-        bottom: 8%;
-        height: 337px;
+        background-size: 100% 100%, auto;
         left: 3%;
-        width: 388px;
+        bottom: 25%;
     }
 
     #slide01 .paragliding-3 {
-        background-size: 991px 686px;
-        bottom: -7%;
-        height: 686px;
-        right: 0;
-        width: 991px;
+        background-size: 100% 100%, auto;
     }
 
     #slide02 .mountain {
-        background-size: 1605px 580px;
-        height: 580px;
-        right: 0;
-        top: 3%;
-        width: 1605px;
-    }
-
-    #slide02 .trees {
-        background-size: 90% 90%;
-        height: 462px;
-        right: -10%;
-        top: 12%;
-        width: 2147px;
+        background-size: 100% 100%, auto;
     }
 
     #slide02 .house {
-        background-size: 90% 90%;
-        height: 581px;
-        left: -6%;
-        right: 0;
-        top: 14%;
-        width: 2072px;
+        background-size: 100% 100%, auto;
     }
 
-    #slide02 .grass-1 {
-        background-size: cover;
-        bottom: -2%;
-        height: 800px;
-        left: -10%;
-        width: 1920px;
-    }
-
-    #slide02 .grass-2 {
-        background-size: cover;
-        height: 800px;
-        right: 0;
-        top: 0;
-        width: 1920px;
-    }
-
-    #slide02 .shrubberys {
-        background-size: 560px 231px;
-        bottom: 28%;
-        height: 231px;
-        right: 0;
-        width: 560px;
+    #slide02 .grass {
+        background-size: 100% 100%, auto;
     }
 
     #slide02 .boy {
-        background-size: 405px 332px;
-        bottom: 0;
-        height: 332px;
-        width: 405px;
+        background-size: 100% 100%, auto;
     }
 
     #slide02 .couple {
-        background-size: 337px 588px;
-        bottom: 0;
-        height: 588px;
-        right: 0;
-        width: 337px;
+        background-size: 100% 100%, auto;
     }
+
+    #slide03 .clouds {
+        background-size: 100% 100%, auto;
+    }
+
+    #slide03 .skyscraper {
+        background-size: 100% 100%, auto;
+        right: 15%;
+    }
+
+    #slide03 .house {
+        background-size: 100% 100%, auto;
+    }
+
+    #slide03 .grass {
+        background-size: 100% 100%, auto;
+    }
+
+    #slide03 .man {
+        background-size: 100% 100%, auto;
+    }
+
+    #slide03 .woman {
+        background-size: 100% 100%, auto;
+    }
+
+}
+
+/* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) {
+
+    #intro .clouds {}
+
+    #intro .birds  {}
+
+    #intro .paragliding {}
+
+    #slide01 .mountain-1 {}
+
+    #slide01 .mountain-2 {}
+
+    #slide01 .mountain-3 {}
+
+    #slide01 .paragliding-1 {}
+
+    #slide01 .grass-1 {}
+
+    #slide01 .grass-2 {}
+
+    #slide01 .paragliding-2 {}
+
+    #slide01 .paragliding-3 {}
+
+    #slide02 .mountain {}
+
+    #slide02 .house {}
+
+    #slide02 .grass {}
+
+    #slide02 .boy {}
+
+    #slide02 .couple {}
+
+    #slide03 .clouds {}
+
+    #slide03 .skyscraper {}
+
+    #slide03 .house {}
+
+    #slide03 .grass {}
+
+    #slide03 .man {}
+
+    #slide03 .woman {}
 
 }

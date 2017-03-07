@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         anchors: ['page1', 'page2'],
         lockAnchors: true,
-        scrollingSpeed: 1000,
+        scrollingSpeed: 3000,
         autoScrolling: true,
         fitToSectionDelay: 1000,
         scrollBar: false,
